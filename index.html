@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IELTS Practice Portal</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<section id="login" class="screen">
+  <div class="card login-card">
+    <div class="logo">IELTS<span>Hub</span></div>
+    <h1>IELTS Practice Portal</h1>
+    <p class="muted">Your private practice dashboard</p>
+    <label>Username</label><input id="username" value="chaman">
+    <label>Password</label><input id="password" type="password" value="ielts2026">
+    <button onclick="login()">Log in</button>
+    <p id="loginMsg" class="error"></p>
+    <small>Demo credentials are pre-filled. Change them in <b>app.js</b> before publishing.</small>
+  </div>
+</section>
+
+<section id="dashboard" class="hidden">
+<header><div class="logo">IELTS<span>Hub</span></div><button class="ghost" onclick="logout()">Log out</button></header>
+<main>
+  <div class="welcome"><div><p class="eyebrow">STUDENT DASHBOARD</p><h1>Welcome back, <span id="studentName">Student</span> 👋</h1><p>Choose a module and start practising.</p></div></div>
+  <div class="grid">
+    <button class="module" onclick="showModule('Reading')"><b>📖 Reading</b><span>Passages, question types & instant scores</span></button>
+    <button class="module" onclick="showModule('Listening')"><b>🎧 Listening</b><span>Audio practice & answer checking</span></button>
+    <button class="module" onclick="showModule('Writing')"><b>✍️ Writing</b><span>Task 1 & Task 2 practice</span></button>
+    <button class="module" onclick="showModule('Speaking')"><b>🗣️ Speaking</b><span>Parts 1, 2 & 3 practice</span></button>
+  </div>
+  <div class="section-title"><h2>Mock Tests</h2></div>
+  <div class="mock"><button onclick="startMock()">📝 Full IELTS-style mock test <span>Listening • Reading • Writing • Speaking</span></button></div>
+  <div class="stats"><div><strong id="attempts">0</strong><span>Attempts</span></div><div><strong id="best">—</strong><span>Best score</span></div><div><strong>4</strong><span>Modules</span></div></div>
+</main>
+</section>
+
+<section id="module" class="hidden"><header><button class="ghost" onclick="back()">← Dashboard</button><div class="logo">IELTS<span>Hub</span></div></header><main>
+<div class="card">
+<p class="eyebrow">PRACTICE MODULE</p><h1 id="moduleTitle"></h1><p id="moduleDesc" class="muted"></p>
+<div id="moduleBody"></div>
+</div></main></section>
+</div>
+<script src="app.js"></script>
+</body></html>
