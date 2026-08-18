@@ -1,23 +1,21 @@
-IELTSHub starter portal
+# IELTS Hub 🚀
 
-DEMO LOGIN
-Username: chaman
-Password: ielts2026
+IELTS Hub is a private, web-based practice portal designed to help students prepare for the IELTS exam across all four core modules: Reading, Listening, Writing, and Speaking.
 
-This is a front-end prototype. It includes:
-- Login screen
-- Student dashboard
-- Reading, Listening, Writing and Speaking sections
-- Mock-test entry point
-- Basic score tracking in the browser
+## ✨ Features
+* **Student Dashboard:** Clean, responsive UI for easy module navigation.
+* **Reading Module:** Interactive passages and practice questions.
+* **Writing Module:** Practice prompts with space for essay drafting.
+* **Speaking Module:** Cue cards and prompt breakdowns for speaking practice.
 
-IMPORTANT
-This prototype does NOT yet provide secure server-side accounts, permanent public hosting,
-AI scoring, full-length original test banks, or audio files. Those require a backend/hosting
-setup and additional content.
+## 🛠️ Built With
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
 
-The questions included are original demo material and are not copied from Alfa IELTS.
+## 🌐 Live Demo
+You can view the live version of the portal here: 
+[https://chamanshaheen123-cmyk.github.io/ielts-hub/](https://chamanshaheen123-cmyk.github.io/ielts-hub/)
 
-To change the demo username/password, edit USER and PASS at the top of app.js.
-For real public deployment, do not rely on this client-side password system; use proper
-server-side authentication/database services.
+---
+*Created for IELTS aspirants.*
